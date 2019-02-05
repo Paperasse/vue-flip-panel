@@ -27,4 +27,6 @@ You can put any html or (framework) component in one of the slots.
 
 The component itself has no formatting. Use properties to add/remove "shadow", "border", "rounded corners". See the properties table for an overview of the properties.
 
+Demo https://vue-flip-panel.netlify.com/
+
 The component is based on this article [Intro to CSS 3D Transforms: Card Flip]https://3dtransforms.desandro.com/card-flip)
