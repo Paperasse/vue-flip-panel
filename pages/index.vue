@@ -30,6 +30,31 @@
           </p>
         </template>
       </flip-panel>
+      <!-- Product card -->
+      <flip-panel  class="flip-panel" shadow :width="productCardWidth">
+        <template slot="front">
+          <div class="front">
+            <img src="~/assets/book.jpg" width="100%" height="100%"/>
+          </div>
+        </template>
+        <template slot="back">
+          <p>
+            Fotography: Fons Peels <br/>
+            Language: English <br/>
+            ISBN: 9789050114806 <br/>
+            Number of pages: 384 <br/>
+            Dimensions: 21 x 29 cm <br/>
+            Full colour, hardcover
+          </p>
+          <p>
+            Published by KNNV Uitgeverij, november 2014
+          </p>
+          <p>
+            This is the first detailed and complete overview of the distribution of the dragonflies and 
+            damselflies of Europe.
+          </p>
+        </template>
+      </flip-panel>
     </div>
 </template>
 
@@ -43,9 +68,10 @@ export default {
   data() {
     return {
       frontColor: '#fdcb6e',
-      shadow: true,
+      backColor: '#ecf0f1',
       height: '250px',
-      flipText: 'Meer..'
+      productCardWidth: '275px',
+      productCardHeight: '380px'
     }
   },
 }
@@ -67,11 +93,14 @@ export default {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     -ms-flex-flow: row wrap;
+
+    justify-content: space-evenly;
   }
 
   .flip-panel {
     margin-left: 20px;
   }
+
   p, h3 {
     padding: 10px;
   }
